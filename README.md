@@ -1,4 +1,5 @@
 # Data Analytics MCP Hub
+![截图](docs/images/001.png)
 
 **让 Claude / LLM 直接用自然语言查询你的 MySQL 和 Hive 数仓，数据不出内网。**
 
