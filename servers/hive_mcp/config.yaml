@@ -1,0 +1,23 @@
+hive:
+  host: "${HIVE_HOST:localhost}"
+  port: "${HIVE_PORT:10000}"
+  username: "${HIVE_USERNAME:hive}"
+  password: "${HIVE_PASSWORD:}"
+  database: "${HIVE_DATABASE:default}"
+  auth: "${HIVE_AUTH:NONE}"
+
+safety:
+  max_rows: 1000
+  query_timeout: 60         # Hive 查询通常更慢，超时设长一些
+  forbidden_keywords:
+    - DROP
+    - DELETE
+    - TRUNCATE
+    - ALTER
+    - CREATE
+    - INSERT
+    - UPDATE
+
+cache:
+  ttl: 600                  # Hive 查询重，缓存时间设长
+  max_size: 64

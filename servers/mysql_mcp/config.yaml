@@ -1,0 +1,33 @@
+mysql:
+  host: "${MYSQL_HOST:localhost}"
+  port: "${MYSQL_PORT:3306}"
+  user: "${MYSQL_USER:root}"
+  password: "${MYSQL_PASSWORD:}"
+  database: "${MYSQL_DATABASE:}"
+  connect_timeout: 10
+
+hive:
+  host: "${HIVE_HOST:localhost}"
+  port: "${HIVE_PORT:10000}"
+  username: "${HIVE_USERNAME:hive}"
+  password: "${HIVE_PASSWORD:}"
+  database: "${HIVE_DATABASE:default}"
+  auth: "${HIVE_AUTH:NONE}"
+
+safety:
+  max_rows: 1000
+  query_timeout: 30
+  forbidden_keywords:
+    - DROP
+    - DELETE
+    - TRUNCATE
+    - ALTER
+    - CREATE
+    - INSERT
+    - UPDATE
+    - GRANT
+    - REVOKE
+
+cache:
+  ttl: 300
+  max_size: 128

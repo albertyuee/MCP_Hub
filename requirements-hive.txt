@@ -1,0 +1,6 @@
+# ── Hive MCP Server（需要先装系统依赖，见 README）──
+-r requirements-mysql.txt
+PyHive>=0.7.0
+thrift>=0.16.0
+thrift-sasl>=0.4.3
+sasl>=0.3.1

@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "mysql-mcp": {
+      "command": "python",
+      "args": ["/path/to/MCPhub/servers/mysql_mcp/server.py"],
+      "env": {
+        "MYSQL_HOST": "localhost",
+        "MYSQL_PORT": "3306",
+        "MYSQL_USER": "root",
+        "MYSQL_PASSWORD": "your_password",
+        "MYSQL_DATABASE": "your_database"
+      }
+    },
+    "hive-mcp": {
+      "command": "python",
+      "args": ["/path/to/MCPhub/servers/hive_mcp/server.py"],
+      "env": {
+        "HIVE_HOST": "localhost",
+        "HIVE_PORT": "10000",
+        "HIVE_USERNAME": "hive",
+        "HIVE_PASSWORD": "",
+        "HIVE_DATABASE": "default",
+        "HIVE_AUTH": "NONE"
+      }
+    }
+  }
+}

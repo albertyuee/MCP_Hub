@@ -1,0 +1,10 @@
+# ── MySQL MCP Server（推荐大多数用户安装这个）──
+mcp>=1.0.0
+pymysql>=1.1.0
+sqlparse>=0.5.0
+sqlalchemy>=2.0.0
+gradio>=4.0.0
+python-dotenv>=1.0.0
+pyyaml>=6.0
+rich>=13.0.0
+cachetools>=5.0.0
